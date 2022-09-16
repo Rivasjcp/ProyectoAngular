@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "holaMundo": {
+    "angular-whishlist": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/hola-mundo",
+            "outputPath": "dist/angular-whishlist",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -64,10 +64,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "holaMundo:build:production"
+              "browserTarget": "angular-whishlist:build:production"
             },
             "development": {
-              "browserTarget": "holaMundo:build:development"
+              "browserTarget": "angular-whishlist:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -75,7 +75,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "holaMundo:build"
+            "browserTarget": "angular-whishlist:build"
           }
         },
         "test": {
@@ -99,6 +99,6 @@
     }
   },
   "cli": {
-    "analytics": "f8da4dbe-5370-4354-91ee-7ca61d9b9699"
+    "analytics": false
   }
 }
